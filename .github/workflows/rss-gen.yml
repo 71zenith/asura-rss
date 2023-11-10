@@ -1,0 +1,22 @@
+name: "idk"
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: "* */1 * * *"
+
+jobs:
+  check_update:
+    runs-on: self-hosted   
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: run_script
+        run: sh asura-rss.sh
+        
+      - name: auto-commit
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "update: rss"
+          repository: .
+          file_pattern: asura.xml
