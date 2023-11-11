@@ -3,7 +3,7 @@ on:
   push:
     branches: [ master ]
   schedule:
-    - cron: "* */1 * * *"
+    - cron: "0 */2 * * *"
 
 jobs:
   check_update:
@@ -19,7 +19,7 @@ jobs:
       - name: auto-commit
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "update: rss"
+          commit_message: "update: asura rss"
           repository: .
           file_pattern: asura.xml
         env:

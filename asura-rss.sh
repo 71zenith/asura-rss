@@ -24,4 +24,4 @@ for i in $to_search; do
 		fi
 	fi
 done
-printf "\n</channel>\n</rss>" >>asura.xml
+printf "</channel>\n</rss>" >>asura.xml
