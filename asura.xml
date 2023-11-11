@@ -1,23 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 
 <channel>
 <title>AsuraScans (Scumbags) - RSS Feed</title>
 <link>https://github.com/71zenith/asura-rss</link>
 <description>A simple RSS feed for asurascans!</description>
+<atom:link href="https://raw.githubusercontent.com/71zenith/asura-rss/master/asura.xml" rel="self" type="application/rss+xml" />
+
+<item>
+<title>Murim Login Chapter 175</title>
+<link>https://asuratoon.com/6849480105-murim-login-chapter-175/</link>
+<description>A simple RSS feed for asura!</description>
+<enclosure url="https://img.asuracomics.com/unsafe/fit-in/200x260/filters:format(webp)/https://asuratoon.com/wp-content/uploads/2022/04/LoginMoorimCover05.png"/>
+<pubDate>Sat, 11 Nov 2023 21:48:09 +0530</pubDate>
+</item>
 
 <item>
 <title>The Player Hides His Past Chapter 28</title>
 <link>https://asuratoon.com/6849480105-the-player-hides-his-past-chapter-28/</link>
 <description>A simple RSS feed for asura!</description>
-<pubDate>Sat, 11 Nov 2023 03:14:30 UTC</pubDate>
+<enclosure url="https://img.asuracomics.com/unsafe/fit-in/200x260/filters:format(webp)/https://asuratoon.com/wp-content/uploads/2023/06/thePlayerHideHisPastCover01Photoauto_scaleLevel3width-1400.jpg"/>
+<pubDate>Sat, 11 Nov 2023 21:48:09 +0530</pubDate>
 </item>
 
 <item>
 <title>Return of the SSS-Class Ranker Chapter 84</title>
 <link>https://asuratoon.com/6849480105-return-of-the-sss-class-ranker-chapter-84/</link>
 <description>A simple RSS feed for asura!</description>
-<pubDate>Sat, 11 Nov 2023 03:14:30 UTC</pubDate>
+<enclosure url="https://img.asuracomics.com/unsafe/fit-in/200x260/filters:format(webp)/https://asuratoon.com/wp-content/uploads/2022/08/ReturnSSSCover01.png"/>
+<pubDate>Sat, 11 Nov 2023 21:48:09 +0530</pubDate>
 </item>
 </channel>
 </rss>
