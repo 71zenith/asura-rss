@@ -18,7 +18,7 @@ for i in $to_search; do
 		title=$(printf "%s\n" "$match" | cut -f2)
 		link=$(printf "%s\n" "$match" | cut -f3)
 		chap=$(printf "%s\n" "$match" | cut -f4)
-		rss=$(printf '\n<item>\n<title>%s</title>\n<link>%s</link>\n<description>A simple RSS feed for asura!</description>\n<enclosure url="%s"/>\n<pubDate>%s</pubDate>\n</item>\n' "$title $chap" "$link" "$thumb" "${time}")
+		rss=$(printf '\n<item>\n<title>%s</title>\n<link>%s</link>\n<description>A simple RSS feed for asura!</description>\n<media:thumbnail url="%s" />\n<pubDate>%s</pubDate>\n</item>\n' "$title $chap" "$link" "$thumb" "${time}")
 		if ! printf "%s\n" "$oldfile" | grep -q "$title $chap"; then
 			printf "%s\n" "$rss" >>asura.xml
 		fi
