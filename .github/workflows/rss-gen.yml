@@ -7,7 +7,7 @@ on:
 
 jobs:
   check_asura:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     permissions:
       contents: write
     steps:
@@ -26,7 +26,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
 
   check_mangapill:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     permissions:
       contents: write
     steps:
