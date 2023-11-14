@@ -1,5 +1,8 @@
-## basic bitch asurascans rss
+## basic bitch asurascans (and mangapill) rss
 runs every hour or so
-dk if it works
-will know after a few days
+
+if u see the repo being not autoupdated, then there is probably no new chapters. it doesn't do baseless commits
+
+recommended to run it on ur own server with cronjobs
+
 ok bye

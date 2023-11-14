@@ -3,10 +3,10 @@ on:
   push:
     branches: [ master ]
   schedule:
-    - cron: "30 * * * *"
+    - cron: "0 */1 * * *"
 
 jobs:
-  check_update:
+  check_asura:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -22,5 +22,24 @@ jobs:
           commit_message: "update: asura rss"
           repository: .
           file_pattern: asura.xml
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+
+  check_mangapill:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: run_script
+        run: sh mangapill-rss.sh
+        
+      - name: auto-commit
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "update: mangapill rss"
+          repository: .
+          file_pattern: mangapill.xml
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
