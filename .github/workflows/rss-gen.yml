@@ -24,7 +24,6 @@ jobs:
           file_pattern: asura.xml
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
-
   check_mangapill:
     runs-on: ubuntu-latest
     permissions:
